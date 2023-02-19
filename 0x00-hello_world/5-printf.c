@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - prints "with proper grammar, but the 
+ * main - prints "with proper grammar, but the
  * outcome is a piece of art," followed by newline.
  * Return: Always 0.
  *
