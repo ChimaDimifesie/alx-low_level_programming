@@ -13,7 +13,7 @@ int _isdigit(int x)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
