@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings 
+ * _strcat - concatenates two strings
  * using at most n bytes from source
  * @dest: input value
  * @Src: input value
