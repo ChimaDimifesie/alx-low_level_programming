@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * prin_number - print an ineger
+ * print_number - print an integer
  * @n: the integer to print
  * Return: Nothing!
  */
