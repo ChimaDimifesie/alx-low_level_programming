@@ -48,7 +48,7 @@ int count_words(char *str)
 			index += word_len(str + index);
 		}
 	}
-	
+
 	return (words);
 }
 
