@@ -22,6 +22,7 @@ int _strlen(char *s)
 	return (i);
 }
 
+
 /**
  * *_strcpy - copies the string pointed to by src
  * including the terminating null byte (\0)
@@ -74,21 +75,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	dog->name = malloc(sizeof(char) * (len1 + 1));
-	 if (dog->name == NULL)
-	 {
-		 free(dog);
-		 return (NULL);
-	 }
-	 dog->owner = malloc(sizeof(char) * (len2 + 1));
-	 if (dog->owner == NULL)
-	 {
-		 free(dog);
-		 free(dog->name);
-		 return (NULL);
-	 }
-	 _strcpy(dog->name, name);
-	 _strcpy(dog->owner, owner);
-	 dog->age = age;
+	if (dog->name == NULL)
+	{
+		free(dog);
+		return (NULL);
+	}
 
-	 return (dog);
+	dog->owner = malloc(sizeof(char) * (len2 + 1));
+	if (dog->owner == NULL)
+	{
+		free(dog);
+		free(dog->name);
+		return (NULL);
+	}
+	_strcpy(dog->name, name);
+	_strcpy(dog->owner, owner);
+	dog->age = age;
+
+	return (dog);
 }
